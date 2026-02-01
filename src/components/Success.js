@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-// Import GIF with fallback
-const kisses = require("../kisses.gif").default || "../kisses.gif";
+// Import GIF from public folder
+const kisses = process.env.PUBLIC_URL + "/kisses.gif";
 
 /**
  * Success component with a soft, playful love note

@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/valentineproposal-main/static/css/main.bd1bc4cb.css",
-    "main.js": "/valentineproposal-main/static/js/main.5a7bc804.js",
+    "main.js": "/valentineproposal-main/static/js/main.a977c6da.js",
     "static/js/592.0db8293a.chunk.js": "/valentineproposal-main/static/js/592.0db8293a.chunk.js",
-    "static/media/kisses.gif": "/valentineproposal-main/static/media/kisses.083fd53c63a54d8dea3b.gif",
     "static/media/madBear.gif": "/valentineproposal-main/static/media/madBear.960144df23faee67bea0.gif",
     "static/media/flowerBear.gif": "/valentineproposal-main/static/media/flowerBear.e3141b910c10038fcd0a.gif",
     "index.html": "/valentineproposal-main/index.html",
     "main.bd1bc4cb.css.map": "/valentineproposal-main/static/css/main.bd1bc4cb.css.map",
-    "main.5a7bc804.js.map": "/valentineproposal-main/static/js/main.5a7bc804.js.map",
+    "main.a977c6da.js.map": "/valentineproposal-main/static/js/main.a977c6da.js.map",
     "592.0db8293a.chunk.js.map": "/valentineproposal-main/static/js/592.0db8293a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd1bc4cb.css",
-    "static/js/main.5a7bc804.js"
+    "static/js/main.a977c6da.js"
   ]
 }
