@@ -1,0 +1,188 @@
+* {
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+.App-body {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-text {
+  font-size: calc(10px + 4vmin);
+  font-weight: bold;
+}
+
+/* Hover effect for the sentence */
+.App-text:hover {
+  color: #391253;
+}
+
+.App-gif {
+  width: 300px;
+  height: 350px;
+}
+
+.App-button {
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.App-button:before {
+  content: "\1F498";
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Hover effect */
+.App-button:hover {
+  background-color: #e60000;
+}
+
+/* Style for the second button (No) */
+.App-button:nth-child(2) {
+  background-color: #666;
+  transition: background-color 0.3s ease;
+}
+
+.App-button:nth-child(2):before {
+  content: "\1F494";
+  color: #666;
+}
+
+/* Hover effect for the second button */
+.App-button:nth-child(2):hover {
+  background-color: #404040;
+}
+
+.App-text-success {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.App-text-success:before {
+  content: "\1F496";
+  color: #ff4d4d;
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+/* Hover effect for the success text */
+.App-text-success:hover {
+  color: #ff4d4d;
+}
+
+.App-text-date {
+  font-size: 18px;
+}
+
+.App-text-date:before {
+  content: "\1F495";
+  color: #ff4d4d;
+  margin-right: 5px;
+}
+
+.App-success {
+  padding: 20px;
+}
+
+/* Success page: center gif and revolve phrases around it */
+.Success-center {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Success-gif {
+  width: 140px;
+  height: 170px;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.Success-rotor {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  display: block;
+  z-index: 1;
+  animation: spinSlow 45s linear infinite;
+}
+
+.Success-rotor.paused {
+  animation-play-state: paused;
+}
+
+.Success-phrase {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  width: 240px;
+  margin-left: -120px;
+  text-align: center;
+  font-size: 15px;
+  color: #111;
+  background: rgba(255,255,255,0.95);
+  padding: 8px 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Modal for viewing phrase */
+.Success-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 9999;
+}
+
+.Success-modal-content {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 12px;
+  max-width: 720px;
+  width: 92%;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.Success-modal-text {
+  font-size: 20px;
+  color: #111;
+  line-height: 1.6;
+}
+
+.Success-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+}
